@@ -1,0 +1,71 @@
+{
+    "name": "lucasgiovanni/laravel-discord-bot-installer",
+    "description": "Um pacote Laravel completo para instalação e gerenciamento de bots do Discord de forma simples e rápida",
+    "keywords": [
+        "laravel",
+        "discord",
+        "bot",
+        "installer",
+        "discord-bot"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Giovanni",
+            "email": "lucasgiovanni@example.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0",
+        "illuminate/contracts": "^12.0",
+        "illuminate/console": "^12.0",
+        "illuminate/database": "^12.0",
+        "illuminate/events": "^12.0",
+        "illuminate/queue": "^12.0",
+        "team-reflex/discord-php": "^7.0",
+        "nesbot/carbon": "^2.67",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^10.0",
+        "laravel/pint": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LucasGiovanni\\DiscordBotInstaller\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LucasGiovanni\\DiscordBotInstaller\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LucasGiovanni\\DiscordBotInstaller\\DiscordBotServiceProvider"
+            ],
+            "aliases": {
+                "DiscordBot": "LucasGiovanni\\DiscordBotInstaller\\Facades\\DiscordBot"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+} 
