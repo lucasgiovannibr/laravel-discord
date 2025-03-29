@@ -1,5 +1,5 @@
 {
-    "name": "lucasgiovanni/laravel-discord-bot-installer",
+    "name": "lucasgiovanni/laravel-discord",
     "description": "Um pacote Laravel completo para instalação e gerenciamento de bots do Discord de forma simples e rápida",
     "keywords": [
         "laravel",
@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Lucas Giovanni",
-            "email": "lucasgiovanni@example.com",
+            "email": "contato@lucasgiovanni.com.br",
             "role": "Developer"
         }
     ],
